@@ -28,3 +28,29 @@ body {
 .gap-slider .slick-slide {
   padding: 10px; /* Increase this to make bigger gap */
 }
+
+/* ////////////////////////////////tab////////////////////////// */
+/* Hide scrollbar globally */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Show scrollbar only on mobile */
+@media (max-width: 768px) {
+  .scrollbar-visible::-webkit-scrollbar {
+    display: block;
+    height: 6px;
+  }
+  .scrollbar-visible::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+}
+
+
+
+
