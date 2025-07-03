@@ -2,9 +2,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-
-const fifthSection = () => {
-     const [activeIndex, setActiveIndex] = useState(0);
+const Faq = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const faqs = [
     {
@@ -35,7 +34,7 @@ const fifthSection = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-     <section className="container max-w-6xl bg-white lg:mt-30 mt-20 rounded-[20px] mx-auto px-20 py-16">
+    <section className="container max-w-6xl bg-white lg:mt-30 mt-20 rounded-[20px] mx-auto px-20 py-16">
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         {/* Left Section */}
         <div className="lg:w-5/12">
@@ -110,4 +109,50 @@ const fifthSection = () => {
   )
 }
 
-export default fifthSection
+export default Faq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
