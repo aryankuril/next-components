@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 
-const TabsPage = () => {
+const Tab= () => {
   const items = [
     {
       title: 'Tab 1',
@@ -164,4 +164,4 @@ const scrollIntoView = (index: number) => {
   );
 };
 
-export default TabsPage;
+export default Tab;

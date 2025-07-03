@@ -5,10 +5,10 @@ import TestimonialCarousel from "./component/TestimonialCarousel";
 import CardHover from './component/CardHover'
 import Faq from "./component/Faq"
 import ImageBox from "./component/ImageBox";
-import ListBox from './component/list'
+import ListBox from './component/ListBox'
 import NumberCounter from './component/NumberCounter'
 import Pricing from './component/Pricing'
-import Tab from './component/tab'
+import Tab from './component/Tab'
 import VideoEmbed from './component/VideoEmbed'
 
 export default function Home() {

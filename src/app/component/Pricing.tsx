@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@mui/material";
 
-const PricingPlans = () => {
+const Pricing = () => {
   const plan_1 = [
     { name: "10 Email Lookups per Day", included: true },
     { name: "Basic Support", included: true },
@@ -151,4 +151,4 @@ const CrossIcon = () => (
   </svg>
 );
 
-export default PricingPlans;
+export default Pricing;
