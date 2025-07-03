@@ -14,7 +14,7 @@ const testimonials = [
       "When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical on laptops I purchased.",
     tagline: "Great Support",
     designation: "CEO, ExampleCorp",
-    image: "https://img.icons8.com/bubbles/100/000000/edit-user.png",
+    image: "/images/card-img.jpg",
   },
   {
     name: "Jane Smith",
@@ -23,7 +23,7 @@ const testimonials = [
       "When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical on laptops I purchased.",
     tagline: "Outstanding Experience",
     designation: "CEO, ExampleCorp",
-    image: "https://img.icons8.com/bubbles/100/000000/edit-user.png",
+    image: "/images/card-img.jpg",
   },
   {
     name: "Alex Johnson",
@@ -32,7 +32,7 @@ const testimonials = [
       "When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical on laptops I purchased.",
     tagline: "Fast & Efficient",
     designation: "CEO, ExampleCorp",
-    image: "https://img.icons8.com/bubbles/100/000000/edit-user.png",
+    image: "/images/card-img.jpg",
   },
   {
     name: "Emily Brown",
@@ -41,7 +41,7 @@ const testimonials = [
       "When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical on laptops I purchased.",
     tagline: "Great Support",
     designation: "CEO, ExampleCorp",
-    image: "https://img.icons8.com/bubbles/100/000000/edit-user.png",
+    image: "/images/card-img.jpg",
   },
   {
     name: "Michael Scott",
@@ -50,7 +50,7 @@ const testimonials = [
       "When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical on laptops I purchased.",
     tagline: "Outstanding Experience",
     designation: "CEO, ExampleCorp",
-    image: "https://img.icons8.com/bubbles/100/000000/edit-user.png",
+    image: "/images/card-img.jpg",
   },
   {
     name: "Dwight Schrute",
@@ -59,7 +59,7 @@ const testimonials = [
       "When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical on laptops I purchased.",
     tagline: "Great Support",
     designation: "CEO, ExampleCorp",
-    image: "https://img.icons8.com/bubbles/100/000000/edit-user.png",
+    image: "/images/card-img.jpg",
   },
 ];
 
