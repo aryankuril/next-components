@@ -52,7 +52,12 @@ const HeroSlider = () => {
   };
 
   return (
+     <div className="w-full">
+    <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
+      Hero Slider
+      </h2>
     <div className="relative w-full h-[500px] sm:h-[400px] md:h-[500px] lg:h-[500px] overflow-hidden">
+      
       {slides.map((item, index) => (
         <div
           key={item.id}
@@ -148,6 +153,7 @@ const HeroSlider = () => {
           />
         ))}
       </div>
+    </div>
     </div>
   );
 };

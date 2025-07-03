@@ -41,6 +41,7 @@ interface ImageBoxProps {
 const ImageBox = ({ image, title, description }: ImageBoxProps) => {
   return (
     <div className="max-w-[345px] w-full bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+      
       {/* Image */}
       <div className="h-[140px] w-full relative">
         <Image src={image} alt={title} fill className="object-cover" />
@@ -66,6 +67,9 @@ const ImageBox = ({ image, title, description }: ImageBoxProps) => {
 const CardGrid = () => {
   return (
     <div className="w-full px-4 py-6">
+      <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
+       Image Box
+      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
         {cardData.map((item) => (
           <ImageBox

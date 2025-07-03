@@ -1,5 +1,5 @@
 import React from 'react'
-import CardHover from '../component/cardHover'
+import CardHover from '../component/CardHover'
 
 const page = () => {
   return (

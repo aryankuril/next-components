@@ -115,7 +115,9 @@ const scrollIntoView = (index: number) => {
 
   return (
     <div className='bg-white rounded-lg mx-4 p-4'>
-      <h1 className='text-2xl font-bold mb-6'>Tabs Page</h1>
+       <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
+      Tabs Page
+      </h2>
 
       <div className='bg-sky-100 flex justify-center items-center py-12'>
         <div className='max-w-md flex flex-col gap-y-2 w-full'>

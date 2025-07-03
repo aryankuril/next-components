@@ -64,6 +64,9 @@ const ListBox = () => {
 
   return (
     <div className="w-full px-4 py-8">
+      <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
+      list box
+      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {plans.map((plan, idx) => (
           <div

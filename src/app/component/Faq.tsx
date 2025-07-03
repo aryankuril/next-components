@@ -35,8 +35,12 @@ const [activeIndex, setActiveIndex] = useState<number | null>(0);
   setActiveIndex(activeIndex === index ? null : index);
 };
 
-  return (
-    <section className="container max-w-6xl bg-white lg:mt-30 mt-20 rounded-[20px] mx-auto px-20 py-16">
+  return (    
+    <section className="container max-w-6xl bg-white lg:mt-30 mt-20 rounded-[20px] mx-auto px-2 py-16">
+    <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
+       Faq
+      </h2>
+
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         {/* Left Section */}
         <div className="lg:w-5/12">

@@ -32,7 +32,12 @@ const VideoEmbed = ({ videoUrl = '', thumbnail, autoPlay = false, mute = true, l
   };
 
   return (
+     <div className="w-full">
+    <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
+      Video Embed
+      </h2>
     <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black">
+      
       {!showVideo && (
         <>
           <Image src={thumbnail} alt="Video thumbnail" fill className="object-cover" />
@@ -70,6 +75,7 @@ const VideoEmbed = ({ videoUrl = '', thumbnail, autoPlay = false, mute = true, l
         </>
       )}
     </div>
+     </div>
   ); 
 };
 

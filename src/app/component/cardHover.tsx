@@ -3,6 +3,10 @@ import React from "react";
 
 const cardHover = () => {
   return (
+     <div className="w-full">
+    <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
+       Card Hover
+      </h2>
    <div className="relative w-[350px] h-[500px] overflow-hidden rounded-xl shadow-xl mx-auto group">
          {/* Background Image */}
          <Image
@@ -37,6 +41,7 @@ const cardHover = () => {
              <li className="pl-6 bg-[url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-calendar.svg')] bg-no-repeat bg-left text-[#DCE3E7]">03.12.2015</li>
            </ul>
          </div>
+       </div>
        </div>
   )
 }

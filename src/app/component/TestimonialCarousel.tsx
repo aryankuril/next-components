@@ -82,6 +82,9 @@ const TestimonialCarousel = () => {
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-10">
+      <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
+        TestimonialCarousel
+      </h2>
       <Slider {...settings}>
         {testimonials.map((item, index) => (
           <div key={index} className="p-4">

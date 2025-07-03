@@ -54,11 +54,16 @@ const NumberCounter = () => {
   };
 
   return (
+         <div className="w-full px-4">
+    <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10 px-4">
+       Number Counter
+      </h2>
     <div
       ref={sectionRef}
       className="relative w-full sm:w-[90%] md:w-[70%] lg:w-[438px] h-60 sm:h-72 md:h-80 rounded-2xl p-6 sm:p-8 flex flex-col justify-between overflow-hidden bg-black from-gray-900 to-black shadow-xl mx-auto px-10"
      
     >
+      
       <div className="absolute inset-0 bg-black opacity-20 z-0 rounded-2xl"></div>
 
       <div className="relative z-10">
@@ -83,6 +88,7 @@ const NumberCounter = () => {
           <span className="text-gray-300 lg:-mr-3 lg:-mt-2 -mt-2 text-7xl">+</span>
         </div>
       </div>
+    </div>
     </div>
   );
 };

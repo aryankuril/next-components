@@ -57,6 +57,9 @@ const Blogs = () => {
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-10">
+      <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
+        Blogs
+      </h2>
       <Slider {...settings}>
         {blogsData.map((item) => (
           <div key={item.id} className="p-4">

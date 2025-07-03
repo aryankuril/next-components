@@ -47,6 +47,9 @@ const PricingPlans = () => {
       className="relative z-[1] w-full bg-cover bg-center"
       style={{ backgroundImage: 'url("/images/pricing.jpeg")' }}
     >
+       <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
+      Pricing Plans
+      </h2>
       <div className="py-[50px] max-w-7xl mx-auto px-4">
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -100,6 +103,7 @@ const PlanCard = ({ title, price, features, planItems }: PlanCardProps) => {
   };
 
   return (
+     
     <div className="max-w-[744px] p-8 rounded bg-[#121212] transition-colors duration-1000 hover:bg-[radial-gradient(circle_at_bottom,rgba(47,129,233,0.5),#151515_70%)]">
       <p className="text-white text-base font-normal mb-2">{title}</p>
 
@@ -139,6 +143,7 @@ const PlanCard = ({ title, price, features, planItems }: PlanCardProps) => {
         ))}
       </motion.ul>
     </div>
+     
   );
 };
 
