@@ -19,18 +19,7 @@ const VideoEmbed = ({ videoUrl = '', thumbnail, autoPlay = false, mute = true, l
   const isYouTube = videoUrl?.includes('youtube.com') || videoUrl?.includes('youtu.be');
   const isVimeo = videoUrl?.includes('vimeo.com');
 
-  const getYouTubeId = (url: string) => {
-    const regExp = /(?:youtube\.com.*v=|youtu\.be\/)([^&]+)/;
-    const match = url.match(regExp);
-    return match ? match[1] : null;
-  };
-
-  const getVimeoId = (url: string) => {
-    const regExp = /vimeo\.com\/(\d+)/;
-    const match = url.match(regExp);
-    return match ? match[1] : null;
-  };
-
+ 
   return (
      <div className="w-full">
     <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">

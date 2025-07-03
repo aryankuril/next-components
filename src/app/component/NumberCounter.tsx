@@ -9,29 +9,32 @@ const NumberCounter = () => {
   const targetNumber = 120;   // Target count value
   const duration = 2000;      // Animation duration in ms
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            startCountAnimation();
-            observer.disconnect(); // Run only once
-          }
-        });
-      },
-      { threshold: 0.5 } // Trigger when 50% visible
-    );
+ useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          startCountAnimation();
+          observer.disconnect(); // Run only once
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+  const section = sectionRef.current; // Store ref snapshot
+
+  if (section) {
+    observer.observe(section);
+  }
+
+  return () => {
+    if (section) {
+      observer.unobserve(section);
     }
+  };
+}, []);
 
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
 
   const startCountAnimation = () => {
     let start: number | null = null;
