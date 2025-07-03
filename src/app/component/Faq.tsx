@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const Faq = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+const [activeIndex, setActiveIndex] = useState<number | null>(0);
+
 
   const faqs = [
     {
@@ -30,9 +31,10 @@ const Faq = () => {
     },
   ];
 
-  const toggleFaq = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
+ const toggleFaq = (index: number) => {
+  setActiveIndex(activeIndex === index ? null : index);
+};
+
   return (
     <section className="container max-w-6xl bg-white lg:mt-30 mt-20 rounded-[20px] mx-auto px-20 py-16">
       <div className="flex flex-col lg:flex-row justify-between gap-10">
