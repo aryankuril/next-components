@@ -32,7 +32,13 @@ const cardData = [
   },
 ];
 
-const ImageBox = ({ image, title, description }) => {
+interface ImageBoxProps {
+  image: string;
+  title: string;
+  description: string;
+}
+
+const ImageBox = ({ image, title, description }: ImageBoxProps) => {
   return (
     <div className="max-w-[345px] w-full bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
       {/* Image */}
