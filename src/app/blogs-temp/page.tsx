@@ -1,5 +1,5 @@
 import React from 'react'
-import Blogs from '../component/Blogs'
+import Blogs from '@/app/component/Blogs'
 
 const index = () => {
   return (
