@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const CardHover = () => {
+const cardhover = () => {
   return (
      <div className="w-full">
     <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
@@ -46,4 +46,4 @@ const CardHover = () => {
   )
 }
 
-export default CardHover
+export default cardhover

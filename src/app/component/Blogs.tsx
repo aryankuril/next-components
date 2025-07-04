@@ -39,7 +39,7 @@ const blogsData = [
   },
 ];
 
-const Blogs = () => {
+const blogs = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -90,4 +90,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default blogs;
