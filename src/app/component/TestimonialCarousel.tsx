@@ -17,7 +17,7 @@ const testimonials = [
     image: "/images/card-img.jpg",
   },
   {
-    name: "Jane Smith",
+    name: "Jane Smith",  
     rating: 5,
     content:
       "When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical on laptops I purchased.",
