@@ -34,7 +34,6 @@ const Pricing = () => {
   return (
     <div
       className="relative z-[1] w-full bg-cover bg-center"
-      style={{ backgroundImage: 'url("/images/pricing.jpeg")' }}
     >
        <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
       Pricing Plans
