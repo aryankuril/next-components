@@ -2,7 +2,7 @@ import HeroSlider from "./component/HeroSlider";
 import HeroBanner from './component/HeroBanner';
 import Blogs from './component/Blogs'
 import TestimonialCarousel from "./component/TestimonialCarousel";
-import CardHover from '@/app/cardhover/page'
+import CardHover from './component/CardHover'
 import Faq from "./component/Faq"
 import ImageBox from "./component/ImageBox";
 import ListBox from './component/ListBox'
