@@ -1,7 +1,7 @@
 import React from 'react'
 import Blogs from '../component/Blogs'
 
-const page = () => {
+const index = () => {
   return (
     <div>
         <Blogs/>
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default index

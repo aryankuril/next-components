@@ -1,7 +1,7 @@
 import React from 'react'
 import ListBox from '../component/ListBox'
 
-const page = () => {
+const index = () => {
   return (
     <div>
         <ListBox/>
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default index

@@ -1,7 +1,7 @@
 import React from 'react'
 import Pricing from '../component/Pricing'
 
-const page = () => {
+const index = () => {
   return (
     <div>
         <Pricing/>
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default index

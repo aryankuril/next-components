@@ -1,7 +1,7 @@
 import React from 'react'
 import Tab from '../component/Tab'
 
-const page = () => {
+const index = () => {
   return (
     <div>
         <Tab/>
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default index

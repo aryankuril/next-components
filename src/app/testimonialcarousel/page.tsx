@@ -1,7 +1,7 @@
 import React from 'react'
 import TestimonialCarousel from "../component/TestimonialCarousel";
 
-const page = () => {
+const index = () => {
   return (
     <div>
       <TestimonialCarousel/>
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default index

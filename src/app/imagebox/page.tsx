@@ -1,7 +1,7 @@
 import React from 'react'
 import ImageBox from "../component/ImageBox";
 
-const page = () => {
+const index = () => {
   return (
     <div>
       <ImageBox/>
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default index

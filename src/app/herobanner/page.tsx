@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroBanner from '../component/HeroBanner';
-const page = () => {
+const index = () => {
   return (
     <div>
       <HeroBanner/>
@@ -8,4 +8,4 @@ const page = () => {
   )
 }
 
-export default page
+export default index

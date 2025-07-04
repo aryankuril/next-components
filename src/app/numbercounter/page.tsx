@@ -1,7 +1,7 @@
 import React from 'react'
 import NumberCounter from '../component/NumberCounter'
 
-const page = () => {
+const index = () => {
   return (
     <div>
         <NumberCounter/>
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default index
