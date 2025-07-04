@@ -10,6 +10,7 @@ import NumberCounter from './component/NumberCounter'
 import Pricing from './component/Pricing'
 import Tab from './component/Tab'
 import VideoEmbed from './component/VideoEmbed'
+import Slider from "./component/Slider";
 
 export default function Home() {
   return (
@@ -30,6 +31,9 @@ export default function Home() {
         videoUrl="/video/desktop-video.mp4" // Custom video or HLS stream
         thumbnail="/images/desktop-banner.png"
       />
+        <main className="min-h-screen max-w-8xl flex items-center justify-center">
+      <Slider/>
+      </main>
     </div>
 
    </div>
