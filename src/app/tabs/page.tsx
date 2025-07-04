@@ -1,5 +1,5 @@
 import React from 'react'
-import Tab from '../component/tab'
+import Tab from '@/app/component/Tab'
 
 const index = () => {
   return (

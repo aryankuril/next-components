@@ -1,5 +1,5 @@
 import React from 'react'
-import CardHover from '../component/cardhover'
+import CardHover from '@/app/component/CardHover'
 
 const index = () => {
   return (
