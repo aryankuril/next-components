@@ -54,7 +54,7 @@ const AdvHeroSlider = () => {
     if (!slider || !thumbnails || !carousel) return;
 
     const items = Array.from(slider.children);
-    const thumbs = Array.from(thumbnails.children);
+    // const thumbs = Array.from(thumbnails.children);
 
     if (index !== null) {
       const currentIndex = parseInt(items[0].getAttribute("data-index") || "0");

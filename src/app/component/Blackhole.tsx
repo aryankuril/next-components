@@ -17,7 +17,7 @@ export default function Blackhole() {
     const centerx = cw / 2;
     const startTime = new Date().getTime();
     let currentTime = 0;
-    const stars: any[] = [];
+    const stars: Star[] = [];
     let collapse = false;
     let expanse = false;
     let returning = false;
