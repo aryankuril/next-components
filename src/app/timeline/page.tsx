@@ -1,9 +1,9 @@
 import React from 'react'
-import CardHover from '@/app/component/cardHover'
+import TimeLine  from '@/app/component/timeline'
 const index = () => {
   return (
     <div>
-      <CardHover/>
+      <TimeLine />
     </div>
   )
 }

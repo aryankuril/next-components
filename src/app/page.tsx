@@ -8,9 +8,11 @@ import ImageBox from "./component/ImageBox";
 import ListBox from './component/ListBox'
 import NumberCounter from './component/NumberCounter'
 import Pricing from './component/Pricing'
+import Slider from "./component/Slider";
 import Tab from './component/Tab'
 import VideoEmbed from './component/VideoEmbed'
-import Slider from "./component/Slider";
+
+
 import HorizontalAccordion from "./component/HorizontalAccordion";
 import AdvHeroSlider from "./component/AdvHeroSlider";
 import VerticalCarousel from "./component/VerticalCarousel";

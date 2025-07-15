@@ -1,9 +1,9 @@
 import React from 'react'
-import CardHover from '@/app/component/cardHover'
+import AdvHeroSlider from '@/app/component/AdvHeroSlider'
 const index = () => {
   return (
     <div>
-      <CardHover/>
+      <AdvHeroSlider/>
     </div>
   )
 }

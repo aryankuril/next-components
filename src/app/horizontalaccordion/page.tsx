@@ -1,9 +1,9 @@
 import React from 'react'
-import CardHover from '@/app/component/cardHover'
+import HorizontalAccordion from '@/app/component/HorizontalAccordion'
 const index = () => {
   return (
     <div>
-      <CardHover/>
+      <HorizontalAccordion/>
     </div>
   )
 }

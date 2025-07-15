@@ -1,9 +1,9 @@
 import React from 'react'
-import CardHover from '@/app/component/cardHover'
+import TextScroll from '@/app/component/TextScroll'
 const index = () => {
   return (
     <div>
-      <CardHover/>
+      <TextScroll/>
     </div>
   )
 }
