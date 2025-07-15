@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 
-
+// 
 const images = [
   {
     src: "/images/img1.jpg",
