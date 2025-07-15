@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef, useEffect } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const ListBox = () => {
   const plans = [
@@ -62,11 +62,24 @@ const ListBox = () => {
     }),
   };
 
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef);
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [isInView]);
+
   return (
-    <div className="w-full px-4 py-8">
+    <div ref={sectionRef} className="w-full px-4 py-8">
       <h2 className="text-center text-3xl md:text-5xl font-bold text-[#121212] mb-6 mt-10">
-      list box
+        list box
       </h2>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {plans.map((plan, idx) => (
           <div
@@ -81,8 +94,7 @@ const ListBox = () => {
                   className="flex items-center gap-3"
                   variants={fadeUp}
                   initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.2 }}
+                  animate={controls}
                   custom={index}
                 >
                   {item.included ? <TickIcon /> : <CrossIcon />}
