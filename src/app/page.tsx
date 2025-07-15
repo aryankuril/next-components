@@ -12,7 +12,7 @@ import Tab from './component/Tab'
 import VideoEmbed from './component/VideoEmbed'
 import Slider from "./component/Slider";
 import HorizontalAccordion from "./component/HorizontalAccordion";
-// import AdvHeroSlider from "./component/AdvHeroSlider";
+import AdvHeroSlider from "./component/AdvHeroSlider";
 import VerticalCarousel from "./component/VerticalCarousel";
 import TimeLine  from "./component/TimeLine";
 import FadeInSection from "./component/FadeInSection"
@@ -51,7 +51,7 @@ export default function Home() {
         </main>
         <HorizontalAccordion />
       </div>
-      {/* <AdvHeroSlider /> */}
+      <AdvHeroSlider />
       <VerticalCarousel />
       <TimeLine />
 
