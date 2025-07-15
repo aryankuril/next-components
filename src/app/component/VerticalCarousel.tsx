@@ -1,8 +1,6 @@
 // app/components/EmojiCarousel.js
 "use client";
 
-import { useEffect } from "react";
-
 
 const emojis = [
   ["🐳", "spouting whale", "By : ARYAN"],

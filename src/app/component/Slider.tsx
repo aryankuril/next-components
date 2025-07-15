@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import Image from "next/image";
+import type { Swiper as SwiperType } from "swiper";
 
 const images = [
   "/images/flower1.jpg",
@@ -20,7 +21,7 @@ const images = [
 
 const Slider = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
   const [direction, setDirection] = useState<"forward" | "backward">("forward");
 
   useEffect(() => {
@@ -33,7 +34,7 @@ const Slider = () => {
   // Ping-pong autoplay logic
   useEffect(() => {
     const interval = setInterval(() => {
-      const swiper = swiperRef.current?.swiper;
+      const swiper = swiperRef.current;
       if (!swiper) return;
 
       if (direction === "forward") {
@@ -57,17 +58,13 @@ const Slider = () => {
   }, [direction]);
 
   return (
-    <div
-      className={`mx-auto px-4 ${
-        isMobile ? "pt-10 pb-10" : "py-10"
-      } max-w-4xl`}
-    >
+    <div className={`mx-auto px-4 ${isMobile ? "pt-10 pb-10" : "py-10"} max-w-4xl`}>
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
         3D Slider
       </h2>
 
       <Swiper
-        ref={swiperRef}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
         direction={isMobile ? "vertical" : "horizontal"}
         effect="coverflow"
         grabCursor

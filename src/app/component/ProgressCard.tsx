@@ -5,7 +5,7 @@ import {
   useRef,
   useState,
   createContext,
-  useContext,
+  // useContext,
   useCallback,
 } from "react";
 
@@ -36,11 +36,11 @@ const data = [
 const CounterContext = createContext<
   { getNextIndex: () => number } | undefined
 >(undefined);
-const useCounter = () => {
-  const context = useContext(CounterContext);
-  if (!context) throw new Error("useCounter must be used within a CounterProvider");
-  return context.getNextIndex;
-};
+// const useCounter = () => {
+//   const context = useContext(CounterContext);
+//   if (!context) throw new Error("useCounter must be used within a CounterProvider");
+//   return context.getNextIndex;
+// };
 
 const CounterProvider = ({ children }: { children: React.ReactNode }) => {
   const counterRef = useRef(0);
@@ -131,7 +131,7 @@ const FinancialScore = ({
 const AnimatedHalfCircle = ({
   value,
   max,
-  strength,
+  // strength,
   colors,
 }: {
   value: number | null;
