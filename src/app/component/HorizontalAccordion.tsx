@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaArrowRight, FaUserCircle } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 // Data for each day's schedule. This makes the component easy to update.
 const scheduleData = [
