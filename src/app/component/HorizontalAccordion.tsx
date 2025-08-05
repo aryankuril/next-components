@@ -66,7 +66,7 @@ export default function App() {
   const [activeItem, setActiveItem] = useState(scheduleData[0].id);
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4 font-sans">
+    <div className="flex justify-center items-center min-h-screen  p-4 font-sans">
       <div className="flex h-[400px] w-full max-w-[900px] shadow-lg rounded-lg overflow-hidden">
         {scheduleData.map((item) => {
           const isActive = activeItem === item.id;
